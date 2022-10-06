@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trung thu web</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./assets/css/grid.css">
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
+    <link rel="stylesheet"
+    href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="app">
+        <header>
+            <nav class="nav">
+                <div class="grid wide">
+                    <div class="row nav-flex">
+                        <div class="nav-logo">
+                            <img src="./assets/img/logo-header.png" alt="" >
+                        </div>
+                        
+                        <ul class="nav-list">
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">Trang chủ</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">Câu chuyện</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">Sản phẩm</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">Feedback</a>
+                            </li>
+                        </ul>
+                        <div>
+                            <a href="#" class="nav-order">ĐẶT HÀNG NGAY<span>: 033.8455.991</span></a>
+                        </div>
+                        <input type="checkbox" id="list-icon" hidden>
+                        <label for="list-icon" class="nav-overlay"></label>
+                        <label class="nav-icon" for="list-icon">
+                            <i class='bx bx-list-ul'></i>
+                        </label>
+                        <label for="list-icon" class="nav--m-and-t">
+                            <ul class="nav-list--m-and-t">
+                                <li class="nav-item--m-and-t">
+                                    <a href="#" class="nav-link--m-and-t">Trang chủ</a>
+                                </li>
+                                <li class="nav-item--m-and-t">
+                                    <a href="#" class="nav-link--m-and-t">Câu chuyện</a>
+                                </li>
+                                <li class="nav-item--m-and-t">
+                                    <a href="#" class="nav-link--m-and-t">Sản phẩm</a>
+                                </li>
+                                <li class="nav-item--m-and-t">
+                                    <a href="#" class="nav-link--m-and-t">Feedback</a>
+                                </li>
+                                <li class="nav-item--m-and-t show-on-mini-mobile" style="display: none;">
+                                    <a href="#" class="nav-link--m-and-t">ĐẶT HÀNG NGAY</a>
+                                </li>
+                            </ul>
+                        </label>
+                    </div>
+                    <div class="header__desc row">
+                        <div class="col l-6 m-12 header__desc-about">
+                            <h1 class="header__desc-about-head">BÁNH TRUNG THU THU HƯƠNG</h1>
+                            <p class="header__desc-about-text">
+                                Ẩn sâu trong tâm hồn và trái tim của mỗi người, gia đình luôn là đích đến. Gia đình, nơi lưu giữ kỉ niệm, những điều nhỏ nhặt thường ngày và cũng là nơi mang đến bồi hồi và háo hức mỗi lần trở về. Nhân dịp mùa trung thu nữa lại về, Thu Hương Bakery gửi đến khách hàng chương trình tri ân đặc biệt:
+                            </p>
+                            <ul class="header__desc-about-list">
+                                <li class="header__desc-about-item">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" style="max-width:24px; 
+                                    transform:none;box-shadow:none;fill:rgb(251,204,6);text-align:inherit;" class=""><path d="M256 8C119.033 8 8 119.033 8 256s111.033 248 248 248 248-111.033 248-248S392.967 8 256 8zm0 48c110.532 0 200 89.451 200 200 0 110.532-89.451 200-200 200-110.532 0-200-89.451-200-200 0-110.532 89.451-200 200-200m140.204 130.267l-22.536-22.718c-4.667-4.705-12.265-4.736-16.97-.068L215.346 303.697l-59.792-60.277c-4.667-4.705-12.265-4.736-16.97-.069l-22.719 22.536c-4.705 4.667-4.736 12.265-.068 16.971l90.781 91.516c4.667 4.705 12.265 4.736 16.97.068l172.589-171.204c4.704-4.668 4.734-12.266.067-16.971z" class=""></path></svg>
+                                    Chiết khấu 5% cho các đơn hàng từ 3.000.000 VNĐ - 6.000.000 VNĐ
+                                </li>
+                                <li class="header__desc-about-item">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" style="max-width:24px; 
+                                    transform:none;box-shadow:none;fill:rgb(251,204,6);text-align:inherit;" class=""><path d="M256 8C119.033 8 8 119.033 8 256s111.033 248 248 248 248-111.033 248-248S392.967 8 256 8zm0 48c110.532 0 200 89.451 200 200 0 110.532-89.451 200-200 200-110.532 0-200-89.451-200-200 0-110.532 89.451-200 200-200m140.204 130.267l-22.536-22.718c-4.667-4.705-12.265-4.736-16.97-.068L215.346 303.697l-59.792-60.277c-4.667-4.705-12.265-4.736-16.97-.069l-22.719 22.536c-4.705 4.667-4.736 12.265-.068 16.971l90.781 91.516c4.667 4.705 12.265 4.736 16.97.068l172.589-171.204c4.704-4.668 4.734-12.266.067-16.971z" class=""></path></svg>
+                                    Chiết khấu 7% cho các đơn hàng từ 6.000.000 VNĐ - 12.000.000 VNĐ
+                                </li>
+                                <li class="header__desc-about-item">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" style="max-width:24px; 
+                                    transform:none;box-shadow:none;fill:rgb(251,204,6);text-align:inherit;" class=""><path d="M256 8C119.033 8 8 119.033 8 256s111.033 248 248 248 248-111.033 248-248S392.967 8 256 8zm0 48c110.532 0 200 89.451 200 200 0 110.532-89.451 200-200 200-110.532 0-200-89.451-200-200 0-110.532 89.451-200 200-200m140.204 130.267l-22.536-22.718c-4.667-4.705-12.265-4.736-16.97-.068L215.346 303.697l-59.792-60.277c-4.667-4.705-12.265-4.736-16.97-.069l-22.719 22.536c-4.705 4.667-4.736 12.265-.068 16.971l90.781 91.516c4.667 4.705 12.265 4.736 16.97.068l172.589-171.204c4.704-4.668 4.734-12.266.067-16.971z" class=""></path></svg>
+                                    Các đơn hàng có giá trị trên 12.000.000 VNĐ vui lòng liên hệ để nhận thêm các ưu đãi hấp dẫn hơn
+                                </li>
+                            </ul>
+                            <a href="#" class="header__desc-about-btn">
+                                LIÊN HỆ NGAY
+                            </a>
+                        </div>
+                        <div class="col l-6 m-12 header__desc-img">
+                            <img src="./assets/img/header-desc-img.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <div class="about">
+            <div class="grid wide about-padding">
+                <div class="row about-top ">
+                    <div class="col l-6 m-12 c-12 about-top__video">
+                        <iframe style="border-radius:12px ;" max-width="560" width="100%" height="345" src="https://www.youtube.com/embed/4VAMAILumVo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <div class="col l-6 m-12 c-12 about-top__desc">
+                        <h3 class="about-top__desc-head">Mùa trăng của tình thân</h3>
+                        <p class=" about-top__desc-text--strong">Khi Hà Nội, thẩn thơ vào những ngày sang thu, mưa cũng tới nhiều hơn, nắng thì đã nhạt dần, một vĩ nhân đã từng ví "Ánh nắng của chiều Thu vàng như một chuyện tình ca than thở chờ những ngày đông về".</p>
+                        <p class="about-top__desc-text" style="margin-bottom:4px;">Mỗi mùa Thu sang là một mùa Trăng lại về, khiến con người ta ai ai cũng thấy bồi hồi và nhớ nhung về gia đình người thân, cũng như cái thú vui thi vị của ngày Tết Trung Thu lại được dịp trở về.</p>
+                        <span class="about-top__desc-text" >Đó là hương vị của gia đình của tình thân, là hương vị ngon ngọt đậm đà truyền thống của những chiếc Bánh trung thu. Những chiếc bánh trọn tình trọn nghĩa và đong đầy ký ức thưởng cùng ấm trà chờ được ủ nóng.</span>
+                            
+                    </div>
+                </div>
+                <div class="row about-bottom">
+                    <div class="col l-6 m-12 c-12 about-bottom__desc">
+                        <p class="about-bottom__desc-text" style="margin:4px ;">
+                            Đủ cái vị, cái hương của mùa Trung Thu, cứ nhẹ nhàng mà se sắt như những mùa trăng ấu thơ đã xa rất xa. Đó là những đêm trăng lên tròn trịa, cùng lũ trẻ vui vẻ ca hát cũng đủ làm đường phố chẳng náo nhiệt, người lớn thì như sống chậm hơn, trầm lắng một chút trong lòng, thong thả pha một ấm trà, bày khay ngũ quả, cắt chiếc bán nướng bánh dẻo để sẵn sàng đón vị khách ghé chơi.</p>
+                        <p class="about-bottom__desc-text" style="margin:4px ;">Vậy là một mùa trăng nữa lại về, Thu Hương Bakery chúc Quý Khách có được một cái tết đoàn viên bình yên như thế thôi, mong Quý Khách có thể lại tận hưởng 'cái thú nhẩn nha' êm đềm đó kể cả trong những ngày đang chống dịch.</p>
+                        <p class="about-bottom__desc-text" style="margin:4px ;">Đó cũng là tâm ý của chúng tôi gửi gắm trong mỗi hộp bánh Trung Thu, là những hương vị truyền thống gợi nhớ những ký ức về ngày xưa, tới những hương vị thật mới lạ được sáng tạo không ngừng nghỉ của những người thợ bánh yêu nghề.</p>
+                        <p class="about-bottom__desc-text" style="margin:4px ;">Một món quà nhỏ mà trọn vẹn !!</p>
+                        <p class="about-bottom__desc-text" style="margin:4px ;">Mời Quý Khách ghé qua Thu Hương Bakery để tìm về những ngày Tết Đoàn Viên xưa cũ nhé</p>
+                    </div>
+                    <div class="col l-6 m-12 c-12">
+                        <div class="about-bottom__desc-img">
+                            <img src="https://bepage.vn/upload/user/174/undefined_z2701729627291_e7efd3eedf6b1234831a5b8e0f5a95dc.jpg" alt="">
+                        </div>
+                        
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="collect">
+            <div class="grid wide">
+                <div class="collect__header">
+                    <h2 class="collect__header-top">BỘ SƯU TẬP</h2>
+                    <h3 class="collect__header-bottom">BÁNH TRUNG THU NĂM 2022</h3>
+                </div>
+                <ul class="row collect__list">
+                    <li class="col l-2-4 m-4 c-6 collect__item">
+                        <div class="collect__img">
+                            <img src="./assets/img/collect-giabao.jpg" alt="">
+                        </div>
+    
+                        <div class="collect__item-body">
+                            <div class="collect__item-des">
+                                <div class="collect__item-des-head">HỘP GIA BẢO</div>
+                                <p class="collect__item-des-price">1.200.000Đ</p>
+                                <div class="collect__item-des-VAT">(Đã VAT- Khách lấy hoá đơn liên hệ)</div>
+                                <p class="collect__item-des-text">8 VỊ BÁNH NƯỚNG 150GR: THẬP CẨM, SỮA DỪA, TRÀ XANH, HẠT SEN, ĐẬU ĐỎ, MÈ ĐEN</p>
+                            </div>
+        
+                            <div class="collect__item-des-btnWrap">
+                                <button class="collect__item-des-btn">Mua </button>
+                                <button class="collect__item-des-btn collect__item-des-btn--strong">Chi tiết</button>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="col l-2-4 m-4 c-6 collect__item">
+                        <a href= "#" class="collect__img">
+                            <img src="./assets/img/collect-uyenvien.jpg" alt="">
+                        </a>
+    
+                        <div class="collect__item-body">
+                            <div class="collect__item-des">
+                                <div class="collect__item-des-head">HỘP UYỂN VIÊN</div>
+                                <p class="collect__item-des-price">1.100.000Đ</p>
+                                <div class="collect__item-des-VAT">(Đã VAT- Khách lấy hoá đơn liên hệ)</div>
+                                <p class="collect__item-des-text">8 VỊ BÁNH NƯỚNG 150GR: THẬP CẨM, SỮA DỪA, TRÀ XANH, HẠT SEN, ĐẬU ĐỎ, MÈ ĐEN, CỐM XANH, ĐẬU XANH</p>
+                            </div>
+        
+                            <div class="collect__item-des-btnWrap">
+                                <button class="collect__item-des-btn">Mua </button>
+                                <button class="collect__item-des-btn collect__item-des-btn--strong">Chi tiết</button>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="col l-2-4 m-4 c-6 collect__item">
+                        <a href= "#" class="collect__img">
+                            <img src="./assets/img/collect-thanhvan.jpg" alt="">
+                        </a>
+    
+                        <div class="collect__item-body">
+                            <div class="collect__item-des">
+                                <div class="collect__item-des-head">HỘP THANH VÂN</div>
+                                <p class="collect__item-des-price">630.000Đ</p>
+                                <div class="collect__item-des-VAT">(Đã VAT- Khách lấy hoá đơn liên hệ)</div>
+                                <p class="collect__item-des-text">8 VỊ BÁNH NƯỚNG 150GR: THẬP CẨM, SỮA DỪA, TRÀ XANH, HẠT SEN, ĐẬU ĐỎ, MÈ ĐEN</p>
+                            </div>
+        
+                            <div class="collect__item-des-btnWrap">
+                                <button class="collect__item-des-btn">Mua </button>
+                                <button class="collect__item-des-btn collect__item-des-btn--strong">Chi tiết</button>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="col l-2-4 m-4 c-6 collect__item">
+                        <a href= "#" class="collect__img">
+                            <img src="./assets/img/collect-thaibinh.jpg" alt="">
+                        </a>
+    
+                        <div class="collect__item-body">
+                            <div class="collect__item-des">
+                                <div class="collect__item-des-head">HỘP THÁI BÌNH</div>
+                                <p class="collect__item-des-price">1.200.000Đ</p>
+                                <div class="collect__item-des-VAT">(Đã VAT- Khách lấy hoá đơn liên hệ)</div>
+                                <p class="collect__item-des-text">4 VỊ BÁNH NƯỚNG 120GR: THẬP CẨM, HẠT SEN, ĐẬU ĐỎ, CỐM XANH</p>
+                            </div>
+        
+                            <div class="collect__item-des-btnWrap">
+                                <button class="collect__item-des-btn">Mua </button>
+                                <button class="collect__item-des-btn collect__item-des-btn--strong">Chi tiết</button>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="col l-2-4 m-4 c-6 collect__item">
+                        <a href= "#" class="collect__img">
+                            <img src="./assets/img/collect-phuquy.jpg" alt="">
+                        </a>
+    
+                        <div class="collect__item-body">
+                            <div class="collect__item-des">
+                                <div class="collect__item-des-head">HỘP PHÚ QUÝ</div>
+                                <p class="collect__item-des-price">420.000Đ</p>
+                                <div class="collect__item-des-VAT">(Đã VAT- Khách lấy hoá đơn liên hệ)</div>
+                                <p class="collect__item-des-text">5 VỊ BÁNH NƯỚNG 80GR: THẬP CẨM, TRÀ XANH, HẠT SEN, ĐẬU ĐỎ, CỐM XANH</p>
+                            </div>
+        
+                            <div class="collect__item-des-btnWrap">
+                                <button class="collect__item-des-btn">Mua </button>
+                                <button class="collect__item-des-btn collect__item-des-btn--strong">Chi tiết</button>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="col l-2-4 m-4 c-6 collect__item">
+                        <a href= "#" class="collect__img">
+                            <img src="./assets/img/collect-anhnguyet.jpg" alt="">
+                        </a>
+    
+                        <div class="collect__item-body">
+                            <div class="collect__item-des">
+                                <div class="collect__item-des-head">HỘP ÁNH NGUYỆT</div>
+                                <p class="collect__item-des-price">450.000Đ</p>
+                                <div class="collect__item-des-VAT">(Đã VAT- Khách lấy hoá đơn liên hệ)</div>
+                                <p class="collect__item-des-text">6 VỊ BÁNH NƯỚNG 80GR: THẬP CẨM, CỐM XANH, TRÀ XANH, HẠT SEN, ĐẬU ĐỎ, ĐẬU XANH</p>
+                            </div>
+        
+                            <div class="collect__item-des-btnWrap">
+                                <button class="collect__item-des-btn">Mua </button>
+                                <button class="collect__item-des-btn collect__item-des-btn--strong">Chi tiết</button>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="col l-2-4 m-4 c-6 collect__item">
+                        <a href= "#" class="collect__img">
+                            <img src="./assets/img/collect-thienthanh.jpg" alt="">
+                        </a>
+    
+                        <div class="collect__item-body">
+                            <div class="collect__item-des">
+                                <div class="collect__item-des-head">HỘP THIÊN THANH</div>
+                                <p class="collect__item-des-price">900.000Đ</p>
+                                <div class="collect__item-des-VAT">(Đã VAT- Khách lấy hoá đơn liên hệ)</div>
+                                <p class="collect__item-des-text">6 VỊ BÁNH NƯỚNG 120GR: THẬP CẨM, SỮA DỪA, HẠT SEN, ĐẬU ĐỎ, CỐM XANH, DỨA</p>
+                            </div>
+        
+                            <div class="collect__item-des-btnWrap">
+                                <button class="collect__item-des-btn">Mua </button>
+                                <button class="collect__item-des-btn collect__item-des-btn--strong">Chi tiết</button>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="col l-2-4 m-4 c-6 collect__item">
+                        <a href= "#" class="collect__img">
+                            <img src="./assets/img/collect-trongdong.jpg" alt="">
+                        </a>
+    
+                        <div class="collect__item-body">
+                            <div class="collect__item-des">
+                                <div class="collect__item-des-head">HỘP TRỐNG ĐỒNG</div>
+                                <p class="collect__item-des-price">630.000Đ</p>
+                                <div class="collect__item-des-VAT">(Đã VAT- Khách lấy hoá đơn liên hệ)</div>
+                                <p class="collect__item-des-text">8 VỊ BÁNH NƯỚNG 80GR: THẬP CẨM, SỮA DỪA, TRÀ XANH, HẠT SEN, ĐẬU ĐỎ, MÈ ĐEN, CỐM XANH, ĐẬU XANH</p>
+                            </div>
+        
+                            <div class="collect__item-des-btnWrap">
+                                <button class="collect__item-des-btn">Mua </button>
+                                <button class="collect__item-des-btn collect__item-des-btn--strong">Chi tiết</button>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="col l-2-4 m-4 c-6 collect__item">
+                        <a href= "#" class="collect__img">
+                            <img src="./assets/img/collect-namlong.jpg" alt="">
+                        </a>
+    
+                        <div class="collect__item-body">
+                            <div class="collect__item-des">
+                                <div class="collect__item-des-head">HỘP NAM LONG</div>
+                                <p class="collect__item-des-price">430.000Đ</p>
+                                <div class="collect__item-des-VAT">(Đã VAT- Khách lấy hoá đơn liên hệ)</div>
+                                <p class="collect__item-des-text">6 VỊ BÁNH NƯỚNG 80GR: THẬP CẨM, SỮA DỪA, TRÀ XANH, HẠT SEN, ĐẬU ĐỎ, ĐẬU XANH</p>
+                            </div>
+        
+                            <div class="collect__item-des-btnWrap">
+                                <button class="collect__item-des-btn">Mua </button>
+                                <button class="collect__item-des-btn collect__item-des-btn--strong">Chi tiết</button>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="col l-2-4 m-4 c-6 collect__item">
+                        <a href= "#" class="collect__img">
+                            <img src="./assets/img/collect-quyphung.jpg" alt="">
+                        </a>
+    
+                        <div class="collect__item-body">
+                            <div class="collect__item-des">
+                                <div class="collect__item-des-head">HỘP QUY PHỤNG</div>
+                                <p class="collect__item-des-price">450.000Đ</p>
+                                <div class="collect__item-des-VAT">(Đã VAT- Khách lấy hoá đơn liên hệ)</div>
+                                <p class="collect__item-des-text">8 VỊ BÁNH NƯỚNG 150GR: THẬP CẨM, SỮA DỪA, TRÀ XANH, HẠT SEN, ĐẬU ĐỎ, MÈ ĐEN</p>
+                            </div>
+        
+                            <div class="collect__item-des-btnWrap">
+                                <button class="collect__item-des-btn">Mua </button>
+                                <button class="collect__item-des-btn collect__item-des-btn--strong">Chi tiết</button>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            
+        </div>
+
+        <div class="why">
+            <div class="grid wide">
+                <div class="why__header">
+                    <h3 class="why__header-head">TẠI SAO CHỌN THU HƯƠNG?</h3>
+                    <div class="why__header-text">Ra đời từ năm 1996, trong suốt 20 năm hình thành và phát triển, với sự cố gắng không ngừng nghỉ để tìm hiểu tư tưởng và cảm xúc của khách hàng, Thu Hương Bakery đã có những phần thành công mang hồn cốt hoa ẩm thực Pháp đến gần hơn với những khách hàng sành ăn.</div>
+                </div>
+                <ul class="row why__list">
+                    <li class="col l-3 m-6 c-12 why__item">
+                        <div class="why__item-img">
+                            <img src="./assets/img/why-1.png" alt="">
+                        </div>
+                        <div class="why__item-head">Thương hiệu lâu đời</div>
+                        <div class="why__item-text">Tự hào danh hiệu “20 năm Thương hiệu Thủ Đô”, Thu Hương mang đến cho bạn những mảnh ghép tinh thần</div>
+                    </li>
+                    <li class="col l-3 m-6 c-12 why__item align-right-on-mobile">
+                        <div class="why__item-img margin-right-on-mobile">
+                            <img src="./assets/img/why-2.png" alt="">
+                        </div>
+                        <div class="why__item-head">Nguyên liệu sạch</div>
+                        <div class="why__item-text margin-right-on-mobile">Sử dụng tươi ngon nhất từ thiên nhiên, tạo ra những chiếc bánh an toàn cho sức khỏe, chuẩn hương vị Pháp.
+                        </div>
+                    </li>
+                    <li class="col l-3 m-6 c-12 why__item">
+                        <div class="why__item-img">
+                            <img src="./assets/img/why-3.png" alt="">
+                        </div>
+                        <div class="why__item-head">Truyền thống giá trị</div>
+                        <div class="why__item-text">Gìn giữ và tiếp nối truyền thông giá trị trong một xã hội hiện đại biến đổi không ngừng.</div>
+                    </li>
+                    <li class="col l-3 m-6 c-12 why__item align-right-on-mobile">
+                        <div class="why__item-img margin-right-on-mobile">
+                            <img src="./assets/img/why-4.png" alt="">
+                        </div>
+                        <div class="why__item-head">Cải tiến từng ngày</div>
+                        <div class="why__item-text margin-right-on-mobile">Không ngừng nỗ lực cải thiện dịch vụ, sáng tạo ra những dòng sản phẩm mới, đáp ứng nhu cầu của khách hàng.</div>
+                    </li>
+                    
+                </ul>
+
+                <div class="why__btn-wrap">
+                    <button class="why__btn">
+                        <a href="#">LIÊN HỆ NGAY</a>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="client">
+            <div class="grid wide">
+                <div class="row client__wrap">
+                    <div class="col l-4 m-6 c-12 client__text">
+                        <div class="client__text-wrap">
+                            <h3 class="client__text-head">CẢM NHẬN CỦA KHÁCH HÀNG</h3>
+                            <p class="client__text-desc">Với Thu Hương Bakery, Tết Trung thu là cơ hội để mọi người trao gửi tấm lòng, sự trân trọng với nhau. Vì vậy, mỗi cảm xúc mà khách hàng trải nghiệm đều là giá trị quá báu của chúng tôi</p>
+                        </div>
+                    </div>
+
+                    <div class="col l-8-3 m-6 c-12 client__info">
+                        <div class="client__info-img">
+                            <img src="./assets/img/client-img-1.jpg" alt="">
+                        </div>
+                        <div class="client__info-wrap">
+                            
+                            <p class="client__info-name">Nguyễn Tú Thắng</p>
+                            <ul class="client__info-star">
+                                <li class="client__info-star-item"><i class='bx bxs-star'></i></li>
+                                <li class="client__info-star-item"><i class='bx bxs-star'></i></li>
+                                <li class="client__info-star-item"><i class='bx bxs-star'></i></li>
+                                <li class="client__info-star-item"><i class='bx bxs-star'></i></li>
+                                <li class="client__info-star-item"><i class='bx bxs-star'></i></li>
+                            </ul>
+                            <p class="client__info-text">Năm nào cũng ủng hộ nhà Thu Hương, bố vợ mình đặc biệt thích ăn bánh đậu xanh trứng muối ở đây. Ông bảo trứng thơm không bị tanh, đậu xanh mềm mịn. Rất tốt cho sức khỏe của mọi người</p>
+                        </div>
+                    </div>
+
+                    <div class="col l-8-3 m-6 c-12 client__info">
+                        <div class="client__info-img">
+                            <img src="./assets/img/client-img-2.jpg" alt="">
+                        </div>
+                        <div class="client__info-wrap">
+                            
+                            <p class="client__info-name">Chị Ngọc Tú</p>
+                            <ul class="client__info-star">
+                                <li class="client__info-star-item"><i class='bx bxs-star'></i></li>
+                                <li class="client__info-star-item"><i class='bx bxs-star'></i></li>
+                                <li class="client__info-star-item"><i class='bx bxs-star'></i></li>
+                                <li class="client__info-star-item"><i class='bx bxs-star'></i></li>
+                                <li class="client__info-star-item"><i class='bx bxs-star'></i></li>
+                            </ul>
+                            <p class="client__info-text">Chất lượng và và kiểu dáng hộp bánh cũng như dịch vụ của Thu Hương quá tuyệt vời để làm quà tặng cho nhân viên và đối tác mỗi dịp trung thu. Mình rất tin tưởng Thu Hương và sẽ còn ủng hộ
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="col l-8-3 m-6 c-12 client__info">
+                        <div class="client__info-img">
+                            <img src="./assets/img/client-img-3.jpg" alt="">
+                        </div>
+                        <div class="client__info-wrap">
+                            
+                            <p class="client__info-name">Trương Quốc Trung</p>
+                            <ul class="client__info-star">
+                                <li class="client__info-star-item"><i class='bx bxs-star'></i></li>
+                                <li class="client__info-star-item"><i class='bx bxs-star'></i></li>
+                                <li class="client__info-star-item"><i class='bx bxs-star'></i></li>
+                                <li class="client__info-star-item"><i class='bx bxs-star'></i></li>
+                                <li class="client__info-star-item"><i class='bx bxs-star'></i></li>
+                            </ul>
+                            <p class="client__info-text">Vị ngọt nhẹ, thơm, lại thêm bánh làm từ thương hiệu mà tôi tin tưởng. Gửi tặng điểm 10 tối đa cho dòng bánh trung thu của Thu Hương luôn. Một thương hiệu bánh lớn làm mình rất hài lòng</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="sale">
+            <div class="grid wide">
+                <ul class="row sale__memories">
+                    <li class="col l-2 m-4 c-12 sale__memories-item">
+                        <div class="sale__memories-item-tape sale__memories-item-tape-1"></div>
+                        <div class="sale__memories-item-img">
+                            <img src="./assets/img/sale-1.jpg" alt="">
+                        </div>
+                    </li>
+                    <li class="col l-2 m-4 c-12 sale__memories-item">
+                        <div class="sale__memories-item-tape  sale__memories-item-tape-2"></div>
+                        <div class="sale__memories-item-img">
+                            <img src="./assets/img/sale-2.jpg" alt="">
+                        </div>
+                    </li>
+                    <li class="col l-2 m-4 c-12 sale__memories-item ">
+                        <div class="sale__memories-item-tape sale__memories-item-tape-1"></div>
+                        <div class="sale__memories-item-img">
+                            <img src="./assets/img/sale-3.jpg" alt="">
+                        </div>
+                    </li>
+                    <li class="col l-2 m-4 c-12 sale__memories-item ">
+                        <div class="sale__memories-item-tape sale__memories-item-tape-2"></div>
+                        <div class="sale__memories-item-img">
+                            <img src="./assets/img/sale-4.jpg" alt="">
+                        </div>
+                    </li>
+                    <li class="col l-2 m-4 c-12 sale__memories-item ">
+                        <div class="sale__memories-item-tape sale__memories-item-tape-2"></div>
+                        <div class="sale__memories-item-img">
+                            <img src="./assets/img/sale-6.jpg" alt="">
+                        </div>
+                    </li>
+                    <li class="col l-2 m-4 c-12 sale__memories-item ">
+                        <div class="sale__memories-item-tape sale__memories-item-tape-1"></div>
+                        <div class="sale__memories-item-img">
+                            <img src="./assets/img/sale-5.png" alt="">
+                        </div>
+                    </li>
+                    
+                </ul>
+                <div class="row sale__about">
+                    <div class="col l-7 m-6 c-12 sale__about-desc">
+                        <div class="sale__about-desc-wrap">
+                            <h1 class="sale__about-desc-head">THẬP KỈ TRỌN TÌNH THÂN</h1>
+                            <p class="sale__about-desc-text">Mỗi dịp Tết Trung Thu, những người con tha hương lại có dịp được trở về nhà, về với những ký ức thuở xưa cũ nhưng vẫn còn vẹn nguyên giá trị. Cũng là khoảng thời gian để mỗi người trong chúng ta sống lại với những điều giản dị mà mộc mạc, để tâm hồn được trong veo một lần nữa. Vậy hãy để Thu Hương Bakery đồng hành cùng bạn và gia đình trong dịp trở về này nhé!</p>
+                            <ul class="sale__about-desc-list hide-on-tablet">
+                                <li class="sale__about-desc-item">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" style="max-width:24px; 
+                                    transform:none;box-shadow:none;fill:rgb(251,204,6);text-align:inherit;" class=""><path d="M256 8C119.033 8 8 119.033 8 256s111.033 248 248 248 248-111.033 248-248S392.967 8 256 8zm0 48c110.532 0 200 89.451 200 200 0 110.532-89.451 200-200 200-110.532 0-200-89.451-200-200 0-110.532 89.451-200 200-200m140.204 130.267l-22.536-22.718c-4.667-4.705-12.265-4.736-16.97-.068L215.346 303.697l-59.792-60.277c-4.667-4.705-12.265-4.736-16.97-.069l-22.719 22.536c-4.705 4.667-4.736 12.265-.068 16.971l90.781 91.516c4.667 4.705 12.265 4.736 16.97.068l172.589-171.204c4.704-4.668 4.734-12.266.067-16.971z" class=""></path></svg>
+                                    Chiết khấu 5% cho các đơn hàng từ 3.000.000 VNĐ - 6.000.000 VNĐ
+                                </li>
+                                <li class="sale__about-desc-item">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" style="max-width:24px; 
+                                    transform:none;box-shadow:none;fill:rgb(251,204,6);text-align:inherit;" class=""><path d="M256 8C119.033 8 8 119.033 8 256s111.033 248 248 248 248-111.033 248-248S392.967 8 256 8zm0 48c110.532 0 200 89.451 200 200 0 110.532-89.451 200-200 200-110.532 0-200-89.451-200-200 0-110.532 89.451-200 200-200m140.204 130.267l-22.536-22.718c-4.667-4.705-12.265-4.736-16.97-.068L215.346 303.697l-59.792-60.277c-4.667-4.705-12.265-4.736-16.97-.069l-22.719 22.536c-4.705 4.667-4.736 12.265-.068 16.971l90.781 91.516c4.667 4.705 12.265 4.736 16.97.068l172.589-171.204c4.704-4.668 4.734-12.266.067-16.971z" class=""></path></svg>
+                                    Chiết khấu 7% cho các đơn hàng từ 6.000.000 VNĐ - 12.000.000 VNĐ
+                                </li>
+                                <li class="sale__about-desc-item">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" style="max-width:24px; 
+                                    transform:none;box-shadow:none;fill:rgb(251,204,6);text-align:inherit;" class=""><path d="M256 8C119.033 8 8 119.033 8 256s111.033 248 248 248 248-111.033 248-248S392.967 8 256 8zm0 48c110.532 0 200 89.451 200 200 0 110.532-89.451 200-200 200-110.532 0-200-89.451-200-200 0-110.532 89.451-200 200-200m140.204 130.267l-22.536-22.718c-4.667-4.705-12.265-4.736-16.97-.068L215.346 303.697l-59.792-60.277c-4.667-4.705-12.265-4.736-16.97-.069l-22.719 22.536c-4.705 4.667-4.736 12.265-.068 16.971l90.781 91.516c4.667 4.705 12.265 4.736 16.97.068l172.589-171.204c4.704-4.668 4.734-12.266.067-16.971z" class=""></path></svg>
+                                    Các đơn hàng có giá trị trên 12.000.000 VNĐ vui lòng liên hệ để nhận thêm các ưu đãi hấp dẫn hơn
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <form action="" class="col l-5 m-6 c-12 sale__form">
+                        <div class="sale__form-wrap">
+                            <h1 class="sale__form-head">ƯU ĐÃI SIÊU HẤP DẪN</h1>
+                            <div class="sale__form-text">Lên đến 20%</div>
+                            <ul class="sale__form-list">
+                                <li>
+                                    <input type="text" class="sale__form-input" placeholder="Họ tên">
+                                </li>
+                                <li>
+                                    <input type="email" class="sale__form-input" placeholder="Email">
+                                </li>
+                                <li>
+                                    <input type="text" class="sale__form-input" placeholder="Số điện thoại">
+                                </li>
+                            </ul>
+                            <button class="sale__form-btn">Đăng ký</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <div class="grid wide">
+                <ul class="row footer__list">
+                    <li class="col l-4 m-12 c-12 footer__list-item">
+                        <div class="footer__list-item-wrap">
+                            <div class="footer__list-img">
+                                <img src="./assets/img/logo-header.png" alt="">
+                            </div>
+                            <ul class="footer__list-menu">
+                                <li class="footer__list-menu-item"><svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 1664 1896.0833" preserveAspectRatio="none" class="svg-shape" style="fill: rgb(255, 255, 255); text-align: inherit; transform: none; box-shadow: none;" data-gradientcolor1="" data-gradientcolor2=""> <path d="M1408 992v480q0 26-19 45t-45 19H960v-384H704v384H320q-26 0-45-19t-19-45V992q0-1 .5-3t.5-3l575-474 575 474q1 2 1 6zm223-69l-62 74q-8 9-21 11h-3q-13 0-21-7L832 424l-692 577q-12 8-24 7-13-2-21-11l-62-74q-8-10-7-23.5T37 878l719-599q32-26 76-26t76 26l244 204V288q0-14 9-23t23-9h192q14 0 23 9t9 23v408l219 182q10 8 11 21.5t-7 23.5z" class="deleteParent"></path> </svg> Địa chỉ: 23 Lê Văn Lương - Thanh Xuân - HN</li>
+                                <li class="footer__list-menu-item"><svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 24 24" preserveAspectRatio="none" class="svg-shape" style="fill: rgb(255, 255, 255); text-align: inherit; transform: none; box-shadow: none;" data-gradientcolor1="" data-gradientcolor2=""> <path d="M6.62,10.79C8.06,13.62 10.38,15.94 13.21,17.38L15.41,15.18C15.69,14.9 16.08,14.82 16.43,14.93C17.55,15.3 18.75,15.5 20,15.5A1,1 0 0,1 21,16.5V20A1,1 0 0,1 20,21A17,17 0 0,1 3,4A1,1 0 0,1 4,3H7.5A1,1 0 0,1 8.5,4C8.5,5.25 8.7,6.45 9.07,7.57C9.18,7.92 9.1,8.31 8.82,8.59L6.62,10.79Z" class="deleteParent"></path> </svg>Hotline: 0986 999 999 - 0989 000 000</li>
+                                <li class="footer__list-menu-item"><svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 1792 1896.0833" preserveAspectRatio="none" class="svg-shape" style="fill: rgb(255, 255, 255); text-align: inherit; transform: none; box-shadow: none;" data-gradientcolor1="" data-gradientcolor2=""> <path d="M1664 1504V736q-32 36-69 66-268 206-426 338-51 43-83 67t-86.5 48.5T897 1280h-2q-48 0-102.5-24.5T706 1207t-83-67q-158-132-426-338-37-30-69-66v768q0 13 9.5 22.5t22.5 9.5h1472q13 0 22.5-9.5t9.5-22.5zm0-1051v-24.5l-.5-13-3-12.5-5.5-9-9-7.5-14-2.5H160q-13 0-22.5 9.5T128 416q0 168 147 284 193 152 401 317 6 5 35 29.5t46 37.5 44.5 31.5T852 1143t43 9h2q20 0 43-9t50.5-27.5 44.5-31.5 46-37.5 35-29.5q208-165 401-317 54-43 100.5-115.5T1664 453zm128-37v1088q0 66-47 113t-113 47H160q-66 0-113-47T0 1504V416q0-66 47-113t113-47h1472q66 0 113 47t47 113z" class="deleteParent"></path> </svg>Email: contact@bepage.vn</li>
+                                <li class="footer__list-menu-item"><svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 24 24" preserveAspectRatio="none" class="svg-shape" style="fill: rgb(255, 255, 255); text-align: inherit; transform: none; box-shadow: none;" data-gradientcolor1="" data-gradientcolor2=""> <path d="M16.36,14C16.44,13.34 16.5,12.68 16.5,12C16.5,11.32 16.44,10.66 16.36,10H19.74C19.9,10.64 20,11.31 20,12C20,12.69 19.9,13.36 19.74,14M14.59,19.56C15.19,18.45 15.65,17.25 15.97,16H18.92C17.96,17.65 16.43,18.93 14.59,19.56M14.34,14H9.66C9.56,13.34 9.5,12.68 9.5,12C9.5,11.32 9.56,10.65 9.66,10H14.34C14.43,10.65 14.5,11.32 14.5,12C14.5,12.68 14.43,13.34 14.34,14M12,19.96C11.17,18.76 10.5,17.43 10.09,16H13.91C13.5,17.43 12.83,18.76 12,19.96M8,8H5.08C6.03,6.34 7.57,5.06 9.4,4.44C8.8,5.55 8.35,6.75 8,8M5.08,16H8C8.35,17.25 8.8,18.45 9.4,19.56C7.57,18.93 6.03,17.65 5.08,16M4.26,14C4.1,13.36 4,12.69 4,12C4,11.31 4.1,10.64 4.26,10H7.64C7.56,10.66 7.5,11.32 7.5,12C7.5,12.68 7.56,13.34 7.64,14M12,4.03C12.83,5.23 13.5,6.57 13.91,8H10.09C10.5,6.57 11.17,5.23 12,4.03M18.92,8H15.97C15.65,6.75 15.19,5.55 14.59,4.44C16.43,5.07 17.96,6.34 18.92,8M12,2C6.47,2 2,6.5 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2Z" class="deleteParent"></path> </svg>Website: https://bepage.vn</li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="col l-4 m-6 c-12 footer__list-item">
+                        <h3 class="footer__list-head">Thông tin</h3>
+                        <ul class="footer__list-menu">
+                            <li><a href="#" class="footer__list-menu-link">Giới thiệu cửa hàng</a></li>
+                            <li><a href="#" class="footer__list-menu-link">Thông tin vận chuyển</a></li>
+                            <li><a href="#" class="footer__list-menu-link">Quy định và điều khoản</a></li>
+                            <li><a href="#" class="footer__list-menu-link">Chính sách bảo mật</a></li>
+                        </ul>
+                    </li>
+                    <li  class="col l-4 m-6 c-12 footer__list-item">
+                        <h3 class="footer__list-head">Trợ giúp</h3>
+                        <ul class="footer__list-menu">
+                            <li><a href="#" class="footer__list-menu-link">Câu hỏi thường gặp</a></li>
+                            <li><a href="#" class="footer__list-menu-link">Hướng dẫn đặt hàng</a></li>
+                            <li><a href="#" class="footer__list-menu-link">Phương thức thanh toán</a></li>
+                            <li><a href="#" class="footer__list-menu-link">Quy đổi trả hàng</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
